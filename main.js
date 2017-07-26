@@ -1,10 +1,10 @@
-// var topics = $('topics')
+var topics = $('topics')
 
-    /*$("#spider").on("click", function() {
+    $("#spider").on("click", function() {
 
 //       // Storing our giphy API URL for a random cat image
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=23f6b43309c14562a304a733e47eb1a5&q=spiders&limit=10&offset=0&rating=PG-13&lang=en";*/
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=23f6b43309c14562a304a733e47eb1a5&q=spiders&limit=10&offset=0&rating=PG-13&lang=en";
 
 var topics = 
  ["Spiders", "Worms", "Bees", "Flies", "Beeetles", "Ants", "Cockroaches", "Millipedes", "Caterpillers", "Crickets", "Butterflies", "Dragonflies", "Locusts", "Moths", "Termites"];
@@ -48,33 +48,33 @@ function renderButtons() {
 
 
 
- // var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=23f6b43309c14562a304a733e47eb1a5&q=bug&limit=10&offset=0&rating=G&lang=en";
+ var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=23f6b43309c14562a304a733e47eb1a5&q=bug&limit=10&offset=0&rating=G&lang=en";
 
-// $.ajax({
+$.ajax({
 
-// 	url: queryURL,
+	url: queryURL,
 
-// 	method: "Get"
+	method: "Get"
 
-//  })
+ })
 
- // ajaxGif = function (gif) {
+ ajaxGif = function (gif) {
 
-	// $.ajax({
+	$.ajax({
 
-	// 	url: 'http://api.giphy.com/v1/gifs/search',
+		url: 'http://api.giphy.com/v1/gifs/search',
 
-	// 	type: 'GET',
+		type: 'GET',
 
-	// 	datatype: 'json',
+		datatype: 'json',
 
-	// 	data: {
+		data: {
 
-	// 		q: gif,
+			q: gif,
 
-	// 		api_key: '23f6b43309c14562a304a733e47eb1a5'
+			api_key: '23f6b43309c14562a304a733e47eb1a5'
 
-	// 	}
+		}
 
 	
 

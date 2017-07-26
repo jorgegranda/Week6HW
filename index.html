@@ -18,6 +18,86 @@
 </head>
     <body>
 
+    // Add ajax scrpit and CDN tags in HTML // 
+
+// create a var array stirings of objects for each item to be Giphyed //
+
+// Generating buttons for each item in the array
+
+    // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
+
+ // add a data-person attributes for each button //    
+
+// var queryURL = variable name of the in the HTTP query string to retrieve, // send request to the server requests using Giphy http url and key provided from Ghiphy site APIExplorer // 
+
+// execute ajax() method to perform an AJAX (asynchronous HTTP) request. //
+
+// Use the JavaScript function JSON.stringify() to convert it into a string. //
+
+// After data comes back from the request
+
+        .done(function(response) {
+
+          console.log(queryURL); // 
+
+console.log(response);
+
+          // storing the data from the AJAX request in the results variable
+
+          var results = response.data;
+
+// Looping through each result item
+
+          for (var i = 0; i < results.length; i++) {
+
+// Creating a paragraph tag with the result item's rating
+
+            var p = $("<p>").text("Rating: " + results[i].rating);
+
+// Appending the image tag to the sellected Div tag // 
+
+// Prependng the Div to the HTML page in the "#id" div // 
+
+// onreadystatechange define function to be called when the readyState property changes //
+
+// if (state === "still") {
+
+        $(this).attr("src", $(this).attr("data-animate"));
+
+        $(this).attr("data-state", "animate");
+
+      } else {
+
+        $(this).attr("src", $(this).attr("data-still"));
+
+        $(this).attr("data-state", "still"); 
+
+<label "for=randomSearch"-Add a new Topic</label>
+
+// Grab the text from the input box //
+
+        var movie = $("#topic-input").val().trim();
+
+        // The textbox is then added to my array //
+
+        movies.push(movie);
+
+        // calling renderButtons which handles the processing of topics array //
+
+        renderButtons();
+
+      });
+
+      // Calling the renderButtons function at least once to display the initial list of topics //
+
+      renderButtons();
+
+      
+ 
+
+
+
+
     	<div id="giphy-view">
 			<!-- <button id="spider">Spiders</button>
 			<button id="worm">Worms</button>
@@ -34,12 +114,12 @@
 			<button id="locust">Locusts</button>
 			<button id="moth">Moths</button>
 			<button id="termite">Termites</button -->>
-		</div>
+		<!-- </div>
 
 		<div id="buttons-view"></div>
-		<div id="images">
+		<div id="images"> -->
 
-		</div>
+		<!-- </div> -->
 
            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
              <script type="text/javascript" src="main.js">
